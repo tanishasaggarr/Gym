@@ -1,0 +1,225 @@
+*
+{
+    margin:0px;
+    padding:0px;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+:root
+{
+    --navbar-height:59px;
+}
+#navbar
+{
+    display: flex;
+    align-items:center;
+    position:sticky;
+    top: 0px;
+
+}
+#logo
+{
+ margin:7px 10px;
+}
+#logo img
+{
+    height: 50px;
+    width: 50px;
+    margin:7px 10px;
+    border-radius: 50%;
+}
+#navbar ul
+{
+   display: flex;
+   font-family: 'Bree Serif', serif;
+}
+#navbar::before
+{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li
+{
+   list-style: none;
+   font-size: 1.3rem;
+}
+#navbar ul li a
+{
+    color: white;
+   display: block;
+   padding: 3px 22px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+#navbar ul li a:hover
+{
+    color:black;
+    background-color: white;
+   
+}
+a:link {
+    color: whitesmoke;
+    background-color: transparent;
+  }
+#home
+{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 22px;
+    height: 269px;
+    top: 0px;
+    left: 0px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before
+{
+    content: "";
+    background:url('../gym1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 250%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;   
+}
+#home h1
+{
+    color: white;
+text-align: center;
+font-family: 'Oxygen', sans-serif;
+}
+#home p
+{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Oxygen', sans-serif;
+}
+#services
+{
+    margin: 34px;
+    display: flex;
+    
+}
+#services .box
+{
+    border: 2px solid   rgb(88, 88, 122);
+    padding: 34px;
+    margin: 1px 26px;
+    border-radius: 28px;
+    background-color: rgb(233, 230, 230);
+    margin-bottom: 20px;
+}
+#services .box img
+{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+#services .box p
+{
+    font-family: 'Oxygen', sans-serif;
+}
+
+
+ #contact
+{
+    position: relative;
+    margin:auto;
+} 
+#contact::before
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../gym1.jpg')  no-repeat center center/cover;
+}
+footer
+{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+ #contact-box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box form
+{
+    width: 40%;
+}
+#contact-box label
+{
+    margin: 50px 60px;
+    font-size: 1.3rem;
+    font-family: 'Oxygen', sans-serif;
+}
+#contact-box input,
+#contact-box textarea
+{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+.h-primary
+{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Oxygen', sans-serif;
+    color:whitesmoke;       
+}
+.h-secondary
+{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Oxygen', sans-serif;
+}
+.btn
+{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    margin: 47px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center
+{
+    text-align: center;
+}
+#submit
+{
+    float:left;
+    width: 100px;
+    font-size: 15px;
+    margin: auto;
+}
+       .btn:hover
+       {
+           background-color: rgba(206, 187, 196, 0);
+           color: gray;
+       }
+#signup
+       {
+        background-color: grey;
+        margin: auto;
+        padding: 20px 50px;
+       }
